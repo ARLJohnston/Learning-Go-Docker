@@ -14,6 +14,9 @@
 !go.sum
 !go.mod
 
+!Dockerfile
+!Dockerfile.*
+
 !README.md
 !LICENSE
 
