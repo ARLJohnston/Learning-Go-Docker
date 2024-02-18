@@ -1,0 +1,15 @@
+name: "Staticcheck Linting"
+on: ["push", "pull_request"]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: "Lint"
+        uses: dominikh/staticcheck-action@v1.2.0
+        with:
+          version: "2022.1.1"
