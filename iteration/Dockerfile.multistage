@@ -6,6 +6,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o iteration -ldflags '-extldflags "-stati
 
 FROM builder AS run-tests
 RUN go test -v ./...
+RUN go test -bench=. ./...
 
 FROM scratch
 COPY --from=builder /app /
