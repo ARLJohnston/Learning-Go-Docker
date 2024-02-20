@@ -4,7 +4,9 @@ import (
   "fmt"
 )
 
-const greeting = "Hello, "
+const (
+  greeting = "Hello, "
+)
 
 func hello(name string) string {
   if name == "" {
