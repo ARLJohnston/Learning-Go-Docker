@@ -1,20 +1,20 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 const (
-  greeting = "Hello, "
+	greeting = "Hello, "
 )
 
 func hello(name string) string {
-  if name == "" {
-    name = "World"
-  }
-  return greeting + name + "!"
+	if name == "" {
+		name = "World"
+	}
+	return greeting + name + "!"
 }
 
 func main() {
-  fmt.Println(hello("Alistair"))
+	fmt.Println(hello("Alistair"))
 }

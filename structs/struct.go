@@ -20,7 +20,7 @@ type Circle struct {
   Radius float64
 }
 
-func (c Circle) Area float64 {
+func (c Circle) Area() float64 {
   return math.Pi * c.Radius * c.Radius
 }
 
@@ -29,6 +29,6 @@ type Triangle struct {
   Height float64
 }
 
-func (t Triangle) Area float64 {
+func (t Triangle) Area() float64 {
   return 0.5 * t.base * t.height
 }
