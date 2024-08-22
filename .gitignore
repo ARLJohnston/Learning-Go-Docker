@@ -19,6 +19,8 @@
 
 !README.md
 !LICENSE
+!flake.nix
+!flake.lock
 
 # !Makefile
 
